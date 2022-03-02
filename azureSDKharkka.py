@@ -357,9 +357,6 @@ def startvm(vmname):
         VIRTUAL_MACHINE_NAME
     ).result()
 
-
-
-
 def getsubnet():
     subnet = network_client.subnets.get(
         GROUP_NAME,
@@ -367,4 +364,3 @@ def getsubnet():
         SUBNET
     )
     print("Get subnet:\n{}".format(subnet.id))
-startvm(VIRTUAL_MACHINE_NAME)
